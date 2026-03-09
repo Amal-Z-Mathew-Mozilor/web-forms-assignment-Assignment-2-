@@ -3,29 +3,30 @@
    <head>
      <meta charset="utf-8">
      <Title>Resqnet Subscription</Title>
+     <link rel="stylesheet" href="style.css">
    </head>
    <body>
     <header>
-        <h1>Complete Registration & Checkout Form</h1>
+        <h1>Complete Registration & Checkout Form</h1><br>
     </header>
     <main>
       <form>  
        <fieldset>
-          <legend id="acc-info">Account Information</legend>
-          <label for="name">Full-Name</label>
+          <legend id="acc-info">Account Information</legend><br>
+          <label for="name">Full-Name<span class="required">*</span></label>
           <input type="text" id="name" required><br><br>
-          <label for="email">Email</label>
+          <label for="email">Email<span class="required">*</span></label>
           <input type="email" id="email" required><br><br>
-          <label for="password">Password</label>
+          <label for="password">Password<span class="required">*</span></label>
           <input type="password" id="password" required><br><br>
-          <label for="confirm-password">Confirm-Password</label>
+          <label for="confirm-password">Confirm-Password<span class="required">*</span></label>
           <input type="password" id="confirm-password" required><br><br>
        </fieldset>
        <br>
         <fieldset>
-         <legend id="Contact-info">Contact Information</legend>
-         <label for="Phone">Phone Number</label>
-         <input type="tel" id="phone" pattern="[0-9] {10}" required><br><br>
+         <legend id="Contact-info">Contact Information</legend><br>
+         <label for="Phone">Phone Number<span class="required">*</span></label>
+         <input type="tel" id="phone" pattern="[0-9] {10}" maxlength="10" required><br><br>
          <label for="company">Company</label>
          <input type="text" id="company"><br><br>
          <label for="web">Website</label>
@@ -33,20 +34,20 @@
         </fieldset>
         <br>
         <fieldset>
-         <legend id="bill">Billing Information</legend>
-         <label for="bill-name">Billing Name</label>
+         <legend id="bill">Billing Information</legend><br>
+         <label for="bill-name">Billing Name<span class="required">*</span></label>
          <input type="text" id="bill-name" required><br><br>
-         <label for="email2">Email</label>
+         <label for="email2">Email<span class="required">*</span></label>
          <input type="email" id="email2" required><br><br>
-         <label for="address1">Address Line 1</label>
+         <label for="address1">Address Line 1<span class="required">*</span></label>
          <input type="text" id="address2" required><br><br>
-         <label for="City">City</label>
+         <label for="City">City<span class="required">*</span></label>
          <input type="text" id="city" required><br><br>
-         <label for="state">State</label>
+         <label for="state">State<span class="required">*</span></label>
          <input type="text" id="state"><br><br>
-         <label for="Postal">Postal Code</label>
+         <label for="Postal">Postal Code<span class="required">*</span></label>
          <input type="text" id="postal" inputmode="numeric" required><br><br>
-         <label for="country">Country</label>
+         <label for="country">Country<span class="required">*</span></label>
          <select id="country" required>
             <option value="">--Select Country--</option>
             <option value="usa">United States</option>
@@ -60,46 +61,23 @@
         </fieldset>
         <br>
         <fieldset>
-          <legend id="payinfo">Payment Information</legend>
-          <label for="cardname">Card Holder Name </label>
+          <legend id="payinfo">Payment Information</legend><br>
+          <label for="cardname">Card Holder Name<span class="required">*</span> </label>
           <input type="text" id="cardname" required><br><br>
-          <label for="cardno">Card Number</label>
+          <label for="cardno">Card Number<span class="required">*</span></label>
           <input type="password" id="cardno" inputmode="numeric" pattern="[0-9] {16}" placeholder="Enter a 16 digit card number" size="25" maxlength="16" required ><br><br>
-          <label for="expiry">Expiry Date</label>
+          <label for="expiry">Expiry Date<span class="required">*</span></label>
           <input type="month" id="expiry" required><br><br>
-          <label for="cvv">CVV</label>
+          <label for="cvv">CVV<span class="required">*</span></label>
           <input type="password" id="cvv" inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" placeholder="Enter a 3 or 4 digit CVV" size="25" required><br><br>
         </fieldset>
+        <br>
+        <footer>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+        </footer>
+        <br><br>
     </form>
-
-
-
-
-
-
-
-
     </main>
    </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
